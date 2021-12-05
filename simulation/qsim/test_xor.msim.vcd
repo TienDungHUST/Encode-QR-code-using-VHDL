@@ -1,0 +1,152 @@
+$comment
+	File created using the following command:
+		vcd file test_xor.msim.vcd -direction
+$end
+$date
+	Wed Dec 23 09:31:16 2020
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module test_xor_int_vlg_vec_tst $end
+$var reg 8 ! inp1 [7:0] $end
+$var reg 8 " inp2 [7:0] $end
+$var wire 1 # outp [31] $end
+$var wire 1 $ outp [30] $end
+$var wire 1 % outp [29] $end
+$var wire 1 & outp [28] $end
+$var wire 1 ' outp [27] $end
+$var wire 1 ( outp [26] $end
+$var wire 1 ) outp [25] $end
+$var wire 1 * outp [24] $end
+$var wire 1 + outp [23] $end
+$var wire 1 , outp [22] $end
+$var wire 1 - outp [21] $end
+$var wire 1 . outp [20] $end
+$var wire 1 / outp [19] $end
+$var wire 1 0 outp [18] $end
+$var wire 1 1 outp [17] $end
+$var wire 1 2 outp [16] $end
+$var wire 1 3 outp [15] $end
+$var wire 1 4 outp [14] $end
+$var wire 1 5 outp [13] $end
+$var wire 1 6 outp [12] $end
+$var wire 1 7 outp [11] $end
+$var wire 1 8 outp [10] $end
+$var wire 1 9 outp [9] $end
+$var wire 1 : outp [8] $end
+$var wire 1 ; outp [7] $end
+$var wire 1 < outp [6] $end
+$var wire 1 = outp [5] $end
+$var wire 1 > outp [4] $end
+$var wire 1 ? outp [3] $end
+$var wire 1 @ outp [2] $end
+$var wire 1 A outp [1] $end
+$var wire 1 B outp [0] $end
+$var wire 1 C sampler $end
+$scope module i1 $end
+$var wire 1 D gnd $end
+$var wire 1 E vcc $end
+$var wire 1 F unknown $end
+$var tri1 1 G devclrn $end
+$var tri1 1 H devpor $end
+$var tri1 1 I devoe $end
+$var wire 1 J temp~0_combout $end
+$var wire 1 K temp~1_combout $end
+$var wire 1 L temp~2_combout $end
+$var wire 1 M temp~3_combout $end
+$var wire 1 N temp~4_combout $end
+$var wire 1 O temp~5_combout $end
+$var wire 1 P temp~6_combout $end
+$var wire 1 Q temp~7_combout $end
+$var wire 1 R inp1~combout [7] $end
+$var wire 1 S inp1~combout [6] $end
+$var wire 1 T inp1~combout [5] $end
+$var wire 1 U inp1~combout [4] $end
+$var wire 1 V inp1~combout [3] $end
+$var wire 1 W inp1~combout [2] $end
+$var wire 1 X inp1~combout [1] $end
+$var wire 1 Y inp1~combout [0] $end
+$var wire 1 Z inp2~combout [7] $end
+$var wire 1 [ inp2~combout [6] $end
+$var wire 1 \ inp2~combout [5] $end
+$var wire 1 ] inp2~combout [4] $end
+$var wire 1 ^ inp2~combout [3] $end
+$var wire 1 _ inp2~combout [2] $end
+$var wire 1 ` inp2~combout [1] $end
+$var wire 1 a inp2~combout [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b11110000 !
+b11111 "
+1B
+1A
+1@
+1?
+0>
+1=
+1<
+1;
+0:
+09
+08
+07
+06
+05
+04
+03
+02
+01
+00
+0/
+0.
+0-
+0,
+0+
+0*
+0)
+0(
+0'
+0&
+0%
+0$
+0#
+xC
+0D
+1E
+xF
+1G
+1H
+1I
+1J
+1K
+1L
+1M
+0N
+1O
+1P
+1Q
+0Y
+0X
+0W
+0V
+1U
+1T
+1S
+1R
+1a
+1`
+1_
+1^
+1]
+0\
+0[
+0Z
+$end
+#1000000

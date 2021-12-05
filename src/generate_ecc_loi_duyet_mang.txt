@@ -1,0 +1,50 @@
+Library ieee;
+use ieee.std_logic_1164.all;
+use IEEE.numeric_std.ALL;
+Library work;
+use work.my_package.all;
+---------
+entity generer_ecc is
+port (
+	clk: in std_logic;
+	mes_poly_nbr: in int_array (0 to 25)
+
+);
+constant gen_poly : int_array := (0,43,139,206,78,43,239,123,206,214,147,24,99,150,39,243,163,136,0,0,0,0,0,0,0,0);
+end generer_ecc;
+---------
+architecture rtl of  generer_ecc is
+ signal arr1,arr2, arr_temp: std_logic_vector(7 downto 0);
+ signal temp1: int_array (0 to 25);
+ signal i : my_integer := 0;
+begin
+	process (clk)
+	variable mes_poly_anpha : int_array (0 to 25);
+	variable mang_anpha : int_array (0 to 25);
+	variable mang_number : int_array (0 to 25);
+	
+	 begin 
+	  if(rising_edge (clk)) then 
+			if (i<26) then
+			  -- convert mảng mes_poly dạng number sang anpha
+			  mes_poly_anpha(i) := Convert_number_to_anpha(mes_poly_nbr(i));
+			  -- Nhân vô hương gen_poly voi phan tử đầu tiên của mes_poly_anpha
+			  mang_anpha(i) := gen_poly(i) + mes_poly_anpha(0);
+			  if (mang_anpha(i)>=255) then
+				mang_anpha(i) := mang_anpha(i)rem 255;
+			  end if;
+			  -- convert mảng mang_anpha dạng number sang number
+			  mang_number(i) := Convert_anpha_to_number(mang_anpha(i)); 
+			  -- convert số sang binary
+			  arr1 <= std_logic_vector(to_unsigned(mang_number(i),8));
+			  arr2 <= std_logic_vector(to_unsigned(mes_poly_nbr(i),8));
+			  arr_temp <= arr1 xor arr2;
+			  temp1(i) <= to_integer(unsigned(arr_temp));
+			  i <= i+1;
+			 else i <= 0;
+			 end if;
+	  end if;
+	 end process;
+	 
+	 
+end rtl;

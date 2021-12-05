@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\QuartusII\final_term\simulation\qsim
+vtest_xor_int
+Z1 IY1mm7fijB`X]aP?EOJAEm1
+Z2 V0DAGPkd26Y4V6gmENF9jK3
+Z3 dE:\QuartusII\final_term\simulation\qsim
+Z4 w1608690664
+Z5 8test_xor.vo
+Z6 Ftest_xor.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+!i10b 1
+Z9 !s100 QH5iR=Hod]ce^B@8ko`Z_3
+!s85 0
+Z10 !s108 1608690672.780000
+Z11 !s107 test_xor.vo|
+Z12 !s90 -work|work|test_xor.vo|
+!s101 -O0
+vtest_xor_int_vlg_check_tst
+!i10b 1
+!s100 B2?EI=GP>3A;XQIc[JoCa2
+IbAYiR1Y@bdjFK^ahzDD^z2
+VlDobb3hj3KMoJ_PiF6DVX2
+R3
+Z13 w1608690663
+Z14 8test_xor.vt
+Z15 Ftest_xor.vt
+L0 59
+R7
+r1
+!s85 0
+31
+Z16 !s108 1608690673.758000
+Z17 !s107 test_xor.vt|
+Z18 !s90 -work|work|test_xor.vt|
+!s101 -O0
+R8
+vtest_xor_int_vlg_sample_tst
+!i10b 1
+!s100 LC`N^d3SNzh621FF3d2m83
+IfVCSRFWRcj3JBl@h<zlEQ2
+VZhAV^7zQNbzZ6Ed64:^<R2
+R3
+R13
+R14
+R15
+L0 29
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
+vtest_xor_int_vlg_vec_tst
+!i10b 1
+!s100 PRHm1g>D5]83BOV=]0jLO3
+I@80l2Gn2YFRP_Oi?d^b^X2
+VLgDTWg_`m8DEoLN^8GBHB3
+R3
+R13
+R14
+R15
+L0 711
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
